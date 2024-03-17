@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		04F1B12B2BA359A500E3AF36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B12A2BA359A500E3AF36 /* AppDelegate.swift */; };
 		04F1B12D2BA359A500E3AF36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B12C2BA359A500E3AF36 /* SceneDelegate.swift */; };
-		04F1B12F2BA359A500E3AF36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B12E2BA359A500E3AF36 /* ViewController.swift */; };
-		04F1B1322BA359A500E3AF36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F1B1302BA359A500E3AF36 /* Main.storyboard */; };
+		04F1B12F2BA359A500E3AF36 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B12E2BA359A500E3AF36 /* MainViewController.swift */; };
 		04F1B1342BA359A700E3AF36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F1B1332BA359A700E3AF36 /* Assets.xcassets */; };
 		04F1B1372BA359A700E3AF36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F1B1352BA359A700E3AF36 /* LaunchScreen.storyboard */; };
+		04F1B1402BA35B0B00E3AF36 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04F1B13F2BA35B0B00E3AF36 /* SnapKit */; };
+		04F1B1422BA35B0B00E3AF36 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 04F1B1412BA35B0B00E3AF36 /* SnapKit-Dynamic */; };
+		04F1B1442BA35B7C00E3AF36 /* CoctailAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B1432BA35B7C00E3AF36 /* CoctailAPIManager.swift */; };
+		04F1B1482BA360FB00E3AF36 /* DetailCocktailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B1472BA360FB00E3AF36 /* DetailCocktailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04F1B1272BA359A500E3AF36 /* CoctailApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoctailApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F1B12A2BA359A500E3AF36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F1B12C2BA359A500E3AF36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04F1B12E2BA359A500E3AF36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04F1B1312BA359A500E3AF36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04F1B12E2BA359A500E3AF36 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04F1B1332BA359A700E3AF36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04F1B1362BA359A700E3AF36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F1B1382BA359A700E3AF36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F1B1432BA35B7C00E3AF36 /* CoctailAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailAPIManager.swift; sourceTree = "<group>"; };
+		04F1B1472BA360FB00E3AF36 /* DetailCocktailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCocktailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F1B1402BA35B0B00E3AF36 /* SnapKit in Frameworks */,
+				04F1B1422BA35B0B00E3AF36 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +64,9 @@
 			children = (
 				04F1B12A2BA359A500E3AF36 /* AppDelegate.swift */,
 				04F1B12C2BA359A500E3AF36 /* SceneDelegate.swift */,
-				04F1B12E2BA359A500E3AF36 /* ViewController.swift */,
-				04F1B1302BA359A500E3AF36 /* Main.storyboard */,
+				04F1B12E2BA359A500E3AF36 /* MainViewController.swift */,
+				04F1B1472BA360FB00E3AF36 /* DetailCocktailViewController.swift */,
+				04F1B1432BA35B7C00E3AF36 /* CoctailAPIManager.swift */,
 				04F1B1332BA359A700E3AF36 /* Assets.xcassets */,
 				04F1B1352BA359A700E3AF36 /* LaunchScreen.storyboard */,
 				04F1B1382BA359A700E3AF36 /* Info.plist */,
@@ -83,6 +90,10 @@
 			dependencies = (
 			);
 			name = CoctailApp;
+			packageProductDependencies = (
+				04F1B13F2BA35B0B00E3AF36 /* SnapKit */,
+				04F1B1412BA35B0B00E3AF36 /* SnapKit-Dynamic */,
+			);
 			productName = CoctailApp;
 			productReference = 04F1B1272BA359A500E3AF36 /* CoctailApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 04F1B11E2BA359A500E3AF36;
+			packageReferences = (
+				04F1B13E2BA35B0B00E3AF36 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 04F1B1282BA359A500E3AF36 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +141,6 @@
 			files = (
 				04F1B1372BA359A700E3AF36 /* LaunchScreen.storyboard in Resources */,
 				04F1B1342BA359A700E3AF36 /* Assets.xcassets in Resources */,
-				04F1B1322BA359A500E3AF36 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +151,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F1B12F2BA359A500E3AF36 /* ViewController.swift in Sources */,
+				04F1B12F2BA359A500E3AF36 /* MainViewController.swift in Sources */,
 				04F1B12B2BA359A500E3AF36 /* AppDelegate.swift in Sources */,
+				04F1B1442BA35B7C00E3AF36 /* CoctailAPIManager.swift in Sources */,
 				04F1B12D2BA359A500E3AF36 /* SceneDelegate.swift in Sources */,
+				04F1B1482BA360FB00E3AF36 /* DetailCocktailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		04F1B1302BA359A500E3AF36 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04F1B1312BA359A500E3AF36 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04F1B1352BA359A700E3AF36 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +304,6 @@
 				INFOPLIST_FILE = CoctailApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +331,6 @@
 				INFOPLIST_FILE = CoctailApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +368,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04F1B13E2BA35B0B00E3AF36 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04F1B13F2BA35B0B00E3AF36 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04F1B13E2BA35B0B00E3AF36 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		04F1B1412BA35B0B00E3AF36 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04F1B13E2BA35B0B00E3AF36 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04F1B11F2BA359A500E3AF36 /* Project object */;
 }
